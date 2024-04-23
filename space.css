@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board {
+    background-color: black;
+    background-image: url(./space.jpg);
+    background-size: 80%;
+    /* You can adjust the percentage to your preference */
+}
+
+.rotate-left {
+    width: 64px;
+    /* Set the width of the image */
+    height: 64px;
+    /* Set the height of the image */
+    transform: rotate(90deg);
+    /* Rotate the image 45 degrees to the left */
+}
+
+.rotate-right {
+    width: 64px;
+    /* Set the width of the image */
+    height: 64px;
+    /* Set the height of the image */
+    transform: rotate(265deg);
+    /* Rotate the image 45 degrees to the left */
+}
+
+.fire {
+    margin-left: 20px;
+    width: 55px;
+    /* Set the width of the image */
+    height: 55px;
+    /* Set the height of the image */
+    /* transform: rotate(265deg); */
+    /* Rotate the image 45 degrees to the left */
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
