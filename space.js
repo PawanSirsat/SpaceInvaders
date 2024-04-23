@@ -124,6 +124,8 @@ function update() {
     for (let j = 0; j < alienArray.length; j++) {
       let alien = alienArray[j]
       if (!bullet.used && alien.alive && detectCollision(bullet, alien)) {
+        let fireSound = document.getElementById('distroySound')
+        fireSound.play()
         bullet.used = true
         alien.alive = false
         alienCount--
@@ -204,6 +206,8 @@ function shoot(e) {
 
   if (e.code == 'Space' || e.target.id == 'fireButton') {
     //shoot
+    let fireSound = document.getElementById('fireSound')
+    fireSound.play()
     let bullet = {
       x: ship.x + (shipWidth * 15) / 32,
       y: ship.y,
